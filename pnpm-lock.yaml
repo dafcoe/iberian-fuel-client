@@ -11,6 +11,9 @@ importers:
       '@dafcoe/dgeg-client':
         specifier: file:../dgeg-client
         version: dgeg-client@file:../dgeg-client
+      '@dafcoe/minetur-client':
+        specifier: file:../minetur-client
+        version: minetur-client@file:../minetur-client
     devDependencies:
       '@eslint/js':
         specifier: ^9.0.0
@@ -1424,6 +1427,9 @@ packages:
   make-dir@4.0.0:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
+
+  minetur-client@file:../minetur-client:
+    resolution: {directory: ../minetur-client, type: directory}
 
   minimatch@10.2.6:
     resolution: {integrity: sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==}
@@ -2971,6 +2977,8 @@ snapshots:
   make-dir@4.0.0:
     dependencies:
       semver: 7.8.5
+
+  minetur-client@file:../minetur-client: {}
 
   minimatch@10.2.6:
     dependencies:
