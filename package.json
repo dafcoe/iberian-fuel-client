@@ -18,6 +18,7 @@
   ],
   "scripts": {
     "dev": "tsx src/dev.ts",
+    "audit-brands": "tsx scripts/brand-auditor.ts",
     "type-check": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
