@@ -1,12 +1,12 @@
 import { StationFuel as DGEGStationFuel } from '@dafcoe/dgeg-client';
 import { StationFuel as MineTurStationFuel } from '@dafcoe/minetur-client';
-import { normalizePrice } from '../normalizers';
+import { normalizePrice, normalizeFuelName } from '../normalizers';
 import { Fuel } from '../types';
 
 function mapDGEGStationFuelToFuel(dgegStationFuel: DGEGStationFuel): Fuel {
   return {
     id: String(dgegStationFuel.id),
-    name: dgegStationFuel.name,
+    name: normalizeFuelName(dgegStationFuel.name),
     price: normalizePrice(dgegStationFuel.price),
     updatedAt: new Date(dgegStationFuel.updatedAt),
   };
