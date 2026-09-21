@@ -12,8 +12,8 @@ export class IberianFuelClient {
    */
   async getStations(): Promise<Station[]> {
     const [ptStations, esStations] = await Promise.allSettled([
-      await this.dgegAdapter.getStations(),
-      await this.mineTurAdapter.getStations(),
+      this.dgegAdapter.getStations(),
+      this.mineTurAdapter.getStations(),
     ]);
 
     const stations: Station[] = [];
