@@ -66,7 +66,6 @@ export function normalizeFuelName(fuel: string): string {
       return FUEL_NAME.HYDROGEN;
 
     default:
-      console.warn('Fuel not found:', cleanFuel);
       return FUEL_NAME.UNKNOWN;
   }
 }

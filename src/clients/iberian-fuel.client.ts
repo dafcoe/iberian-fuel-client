@@ -8,7 +8,7 @@ export class IberianFuelClient {
   ) {}
 
   /**
-   * Get all stations from Portugal, Spain or both.
+   * Get all stations from Portugal and Spain.
    */
   async getStations(): Promise<Station[]> {
     const [ptStations, esStations] = await Promise.allSettled([
