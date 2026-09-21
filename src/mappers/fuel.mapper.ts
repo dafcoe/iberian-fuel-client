@@ -19,7 +19,7 @@ export function mapDGEGStationFuelsToFuels(dgegStationFuels: DGEGStationFuel[]):
 function mapMineTurStationFuelToFuel(mineTurStationFuel: MineTurStationFuel): Fuel {
   return {
     id: String(mineTurStationFuel.id),
-    name: mineTurStationFuel.name,
+    name: normalizeFuelName(mineTurStationFuel.name),
     price: normalizePrice(mineTurStationFuel.price),
     updatedAt: new Date(mineTurStationFuel.updatedAt),
   };
