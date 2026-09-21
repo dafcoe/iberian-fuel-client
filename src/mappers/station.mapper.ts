@@ -22,7 +22,7 @@ export function mapDGEGStationsToStations(dgegStations: DGEGStation[]): Station[
 
 function mapMineTurStationToStation(mineTurStation: MineTurStation): Station {
   return {
-    id: `${COUNTRY_PREFIX.PT}${mineTurStation.id}`,
+    id: `${COUNTRY_PREFIX.ES}${mineTurStation.id}`,
     name: mineTurStation.brand,
     brand: normalizeBrand(mineTurStation.brand),
     address: mapMineTurStationToAddress(mineTurStation),
