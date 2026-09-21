@@ -1,5 +1,5 @@
 {
-  "name": "dgeg-client",
+  "name": "iberian-fuel-client",
   "version": "1.0.0",
   "description": "A typescript client to fetch fuel data of Portuguese and Spanish fuel stations",
   "type": "module",
