@@ -1,7 +1,7 @@
 import { Station as DGEGStation } from '@dafcoe/dgeg-client';
 import { Station as MineTurStation } from '@dafcoe/minetur-client';
-import { Address } from '../../types';
 import { COUNTRY_NAME } from '../../constants';
+import { Address } from '../../types';
 
 export const avLiberdadeDgegStationFixture: DGEGStation = {
   id: 1,
