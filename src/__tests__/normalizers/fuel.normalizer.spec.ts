@@ -1,4 +1,3 @@
-import { describe, expect, it } from 'vitest';
 import { FUEL_NAME } from '../../constants';
 import { normalizeFuelName } from '../../normalizers';
 
@@ -10,10 +9,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_95;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Gasoline 95" for "gasolina 95 e5 premium"', () => {
@@ -22,10 +21,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_95;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Gasoline 95" for "gasolina especial 95"', () => {
@@ -34,10 +33,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_95;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Gasoline 95" for "gasolina simples 95"', () => {
@@ -46,10 +45,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_95;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Gasoline 95" for "gasolina renovable"', () => {
@@ -58,10 +57,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_95;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -72,10 +71,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_98;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Gasoline 98" for "gasolina especial 98"', () => {
@@ -84,10 +83,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_98;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -98,10 +97,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_2_STROKE;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -112,10 +111,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Diesel" for "gasóleo simples"', () => {
@@ -124,10 +123,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Diesel" for "biodiésel"', () => {
@@ -136,10 +135,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Diesel" for "diésel renovable"', () => {
@@ -148,10 +147,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -162,10 +161,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL_PREMIUM;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Diesel Premium" for "gasóleo premium"', () => {
@@ -174,10 +173,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL_PREMIUM;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -188,10 +187,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL_FARM;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "Farm Diesel" for "gasóleo colorido"', () => {
@@ -200,10 +199,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL_FARM;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -214,10 +213,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL_HEAT;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -228,10 +227,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.LPG;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "LPG" for "gpl auto"', () => {
@@ -240,10 +239,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.LPG;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -254,10 +253,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.CNG;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "CNG" for "gnc (gás natural comprimido) - €/kg"', () => {
@@ -266,10 +265,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.CNG;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -280,10 +279,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.LNG;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should return "LNG" for "gnl (gás natural liquefeito) - €/kg"', () => {
@@ -292,10 +291,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.LNG;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -306,10 +305,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.ADBLUE;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -320,10 +319,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.ETHANOL;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -334,10 +333,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.HYDROGEN;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -348,10 +347,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.GASOLINE_95;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
 
     it('should trim leading and trailing whitespace', () => {
@@ -360,10 +359,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.DIESEL_PREMIUM;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 
@@ -374,10 +373,10 @@ describe('normalizeFuelName', () => {
       const expectedFuel = FUEL_NAME.UNKNOWN;
 
       // Act
-      const output = normalizeFuelName(fuel);
+      const normalizedFuel = normalizeFuelName(fuel);
 
       // Assert
-      expect(output).toBe(expectedFuel);
+      expect(normalizedFuel).toBe(expectedFuel);
     });
   });
 });
