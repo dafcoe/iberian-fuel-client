@@ -11,7 +11,7 @@ import {
   granViaStationFixture,
   rotundaMarquesDgegStationWithFuelsFixture,
   rotundaMarquesStationFixture,
-} from '../fixtures/station.fixture';
+} from '../__fixtures__/station.fixture';
 
 describe('mapDGEGStationsToStations', () => {
   describe('when an empty array is provided', () => {

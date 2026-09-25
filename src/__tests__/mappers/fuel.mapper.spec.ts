@@ -11,7 +11,7 @@ import {
   gasolina95MineTurStationFuelFixture,
   gasoline95DgegFuelFixture,
   gasoline95MineTurFuelFixture,
-} from '../fixtures/fuel.fixture';
+} from '../__fixtures__/fuel.fixture';
 
 describe('mapDGEGStationFuelsToFuels', () => {
   describe('when an empty array is provided', () => {

@@ -4,7 +4,7 @@ import {
   avLiberdadeDgegStationFixture,
   granViaAddressFixture,
   granViaMineTurStationFixture,
-} from '../fixtures/address.fixture';
+} from '../__fixtures__/address.fixture';
 
 describe('mapDGEGStationToAddress', () => {
   it('should map the address from the DGEG station data', () => {
