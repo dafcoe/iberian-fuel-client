@@ -65,6 +65,18 @@ describe('normalizeFuelName', () => {
   });
 
   describe('when fuel belongs to gasoline 98 family', () => {
+    it('should return "Gasoline 98" for "gasolina 98"', () => {
+      // Assemble
+      const fuel = 'gasolina 98';
+      const expectedFuel = FUEL_NAME.GASOLINE_98;
+
+      // Act
+      const normalizedFuel = normalizeFuelName(fuel);
+
+      // Assert
+      expect(normalizedFuel).toBe(expectedFuel);
+    });
+
     it('should return "Gasoline 98" for "gasolina 98 e5"', () => {
       // Assemble
       const fuel = 'gasolina 98 e5';
@@ -247,6 +259,18 @@ describe('normalizeFuelName', () => {
   });
 
   describe('when fuel belongs to CNG family', () => {
+    it('should return "CNG" for "biogas natural comprimido"', () => {
+      // Assemble
+      const fuel = 'biogas natural comprimido';
+      const expectedFuel = FUEL_NAME.CNG;
+
+      // Act
+      const normalizedFuel = normalizeFuelName(fuel);
+
+      // Assert
+      expect(normalizedFuel).toBe(expectedFuel);
+    });
+
     it('should return "CNG" for "gas natural comprimido"', () => {
       // Assemble
       const fuel = 'gas natural comprimido';
