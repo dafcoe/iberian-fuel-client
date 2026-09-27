@@ -1,3 +1,6 @@
 allowBuilds:
   esbuild: true
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@dafcoe/dgeg-client@1.0.0'
+  - '@dafcoe/minetur-client@1.0.0'

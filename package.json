@@ -52,7 +52,7 @@
     "vitest": "^2.0.0"
   },
   "dependencies": {
-    "@dafcoe/dgeg-client": "file:../dgeg-client",
-    "@dafcoe/minetur-client": "file:../minetur-client"
+    "@dafcoe/dgeg-client": "^1.0.0",
+    "@dafcoe/minetur-client": "^1.0.0"
   }
 }
